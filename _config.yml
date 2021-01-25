@@ -21,7 +21,7 @@
 title: Code and Coda
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Blog by by Andrei Rubaniuk.
+  Blog by Andrei Rubaniuk.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.rubaniuk.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AndreiRubaniuk
