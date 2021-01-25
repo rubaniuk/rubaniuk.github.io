@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 It was time for me to embrace GitHub Pages and migrate my blog from WordPress to Jekyll.
 
-Why? WP is a great publishing platform, but I wanted something that requires minimal maintenance, doesn't ask me to renew hosting and I could publish from command line. Jekyll checked all the boxes and I mostly followed Bob Gale's <a href="https://www.bawbgale.com/from-wordpress-to-jekyll/" target="_blank">excellent migration guide</a>.
+Why? WP is a great publishing platform, but I wanted something that requires minimal maintenance, doesn't ask me to renew web hosting and allows me to publish from command line. Jekyll checked all the boxes and I mostly followed Bob Gale's <a href="https://www.bawbgale.com/from-wordpress-to-jekyll/" target="_blank">excellent migration guide</a>.
 
 It wasn't as smooth as I anticipated. Even though all blog _posts, _drafts and wp-content were exported, I ran into issue where simply copying exported markdown files (.md) from _posts folder didn't work and I had to comment out id, guid and permalink (see below). After these changes posts showed mostly fine.
 
