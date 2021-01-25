@@ -10,6 +10,24 @@ source "https://rubygems.org"
 # gem "jekyll", "~> 4.2.0"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
+# Themes doc: https://jekyllrb.com/docs/themes/
+# Theme gems: https://rubygems.org/search?utf8=✓&query=jekyll-theme
+# gem 'jekyll-theme-primer'
+# gem "jekyll-theme-hacker"
+# gem "jekyll-theme-cayman"
+# gem "jekyll-theme-minimal"
+# gem "jekyll-theme-architect"
+# gem "jekyll-theme-slate"
+# gem "jekyll-theme-time-machine"
+# gem "jekyll-theme-midnight"
+# gem "jekyll-theme-leap-day"
+# gem "jekyll-theme-dinky"
+# gem "jekyll-theme-merlot"
+# gem "jekyll-theme-tactile"
+# gem "jekyll-theme-modernist"
+# gem "jekyll-theme-remote-theme"
+
+
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 210", group: :jekyll_plugins
