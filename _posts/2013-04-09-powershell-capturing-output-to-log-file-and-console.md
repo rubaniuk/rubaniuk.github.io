@@ -14,7 +14,7 @@ Recently I had to redirect full PowerShell session to both console and log file.
 
 &nbsp;
 
-<pre class="brush: powershell; gutter: true">$ErrorActionPreference="SilentlyContinue"
+{% highlight powershell %}$ErrorActionPreference="SilentlyContinue"
 Stop-Transcript | out-null
 $ErrorActionPreference = "Continue"
 
@@ -23,10 +23,10 @@ Start-Transcript -path $OutputFileLocation -append
 
 Write-Host "This will go into output.log"
 
-# redirecting both STDOUT and STDERR (2&gt;&1) to transcript:
-robocopy.exe C:\ D:\ readme.txt 2&gt;&1 | out-host
+# redirecting both STDOUT and STDERR (2>&1) to transcript:
+robocopy.exe C:\ D:\ readme.txt 2>&1 | out-host
 
-Stop-Transcript</pre>
+Stop-Transcript{% endhighlight %}
 
 &nbsp;
 

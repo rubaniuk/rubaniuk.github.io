@@ -17,11 +17,12 @@ After uninstalling TP-Link driver/utility package I&#8217;ve noticed that it lef
 
 Really TP-Link? I was not able to use my old USB Wireless Adapter and the list of wireless networks simply wouldn&#8217;t show up. Quick Internet search helped solve the problem, resetting Winsock Catalog fixed it:
 
-<pre class="brush: bash; gutter: true">netsh winsock reset</pre>
+{% highlight bash %}netsh winsock reset{% endhighlight %}
 
 <span style="line-height: 24.0001px;">In addition, I suspected that Windows system files might be corrupted so I decided to check:</span>
 
-<pre class="brush: bash; gutter: true">C:\WINDOWS\system32\sfc /scannow
+{% highlight bash %}
+C:\WINDOWS\system32\sfc /scannow
 
 Beginning system scan. This process will take some time.
 
@@ -31,7 +32,8 @@ Verification 100% complete.
 Windows Resource Protection found corrupt files and successfully repaired
 them. Details are included in the CBS.Log windir\Logs\CBS\CBS.log. For
 example C:\Windows\Logs\CBS\CBS.log. Note that logging is currently not
-supported in offline servicing scenarios.</pre>
+supported in offline servicing scenarios.
+{% endhighlight %}
 
 All fixed, back to more productive activities.
 

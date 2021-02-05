@@ -30,7 +30,7 @@ After testing locally, I went ahead and <a href="https://www.namecheap.com/suppo
 It took about 30 minutes for DNS settings to change. Note that TLS version wasn't available immediately and after waiting 2-3 hours for TLS certitifcate to be available, I enforced HTTPS in the GitHub Pages settings.
 
 It's pretty liberating to be able to run an incremental Jekyll build and simply refresh your browser to see the changes:
-<pre class="brush: bash; gutter: true">bundle exec jekyll serve --trace --watch --incremental</pre>
+{% highlight bash %}bundle exec jekyll serve --trace --watch --incremental{% endhighlight %}
 
 I still need to figure out custom themes and format book reviews.
 

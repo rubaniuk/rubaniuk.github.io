@@ -10,7 +10,8 @@ categories:
   - C++
   - Programming Interview
 ---
-<pre class="brush: cpp; gutter: true">typedef struct _TreeNode
+{% highlight cpp %}
+typedef struct _TreeNode
 {
 	struct _TreeNode* pLeft;
 	struct _TreeNode* pRight;
@@ -26,7 +27,8 @@ void BinaryTreePreorderTraversal(PTreeNode root)
 		return;
 	}
 
-	printf("%d\t", root-&gt;data);
-	BinaryTreePreorderTraversal(root-&gt;pLeft);
-	BinaryTreePreorderTraversal(root-&gt;pRight);
-}</pre>
+	printf("%d\t", root->data);
+	BinaryTreePreorderTraversal(root->pLeft);
+	BinaryTreePreorderTraversal(root->pRight);
+}
+{% endhighlight %}

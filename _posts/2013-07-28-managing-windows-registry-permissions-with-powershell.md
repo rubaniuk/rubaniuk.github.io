@@ -14,7 +14,7 @@ categories:
 
 And here&#8217;s the PowerShell script code:
 
-<pre class="brush: powershell; gutter: true">$acl = Get-Acl HKLM:\Software\Foobar\Product
+{% highlight powershell %}$acl = Get-Acl HKLM:\Software\Foobar\Product
 
 # Disable inheritance for this key (true), remove inherited access rules (false):
 $acl.SetAccessRuleProtection($true, $false)
@@ -31,4 +31,4 @@ Set-Acl HKLM:\Software\Foobar\Product $acl
 
 # Now if you create subkey it will not inherit permissions from parent key:
 $rootRegPath = Join-Path -path $rootRegPath -childPath SomeProduct
-new-item -path $rootRegPath</pre>
+new-item -path $rootRegPath{% endhighlight %}

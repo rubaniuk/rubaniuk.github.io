@@ -10,13 +10,15 @@ categories:
   - C++
   - Programming Interview
 ---
-<pre class="brush: cpp; gutter: true">// In a given binary tree swap right and left node,
+
+{% highlight cpp %}
+// In a given binary tree swap right and left node,
 // so that the tree will look like:
-//	        4		        4
-//	       / \             / \
-//        2   5	=&gt;        5   2
-//       / \		         / \
-//      1   3		        3   1
+//          4                  4
+//         / \                / \
+//        2   5	    =>       5   2
+//       / \                / \
+//      1   3              3   1
 
 typedef struct _TreeNode
 {
@@ -32,18 +34,19 @@ bool SwapSubtrees(PTreeNode root)
 		return false;	
 	}
 
-	PTreeNode tmp = root-&gt;pRight;
-	root-&gt;pRight = root-&gt;pLeft;
-	root-&gt;pLeft = tmp;
+	PTreeNode tmp = root->pRight;
+	root->pRight = root->pLeft;
+	root->pLeft = tmp;
 
-	if(root-&gt;pRight)
+	if(root->pRight)
 	{
-		SwapSubtrees(root-&gt;pRight);	
+		SwapSubtrees(root->pRight);	
 	}
-	if(root-&gt;pLeft)
+	if(root->pLeft)
 	{
-		SwapSubtrees(root-&gt;pLeft);	
+		SwapSubtrees(root->pLeft);	
 	}
 
 	return true;
-}</pre>
+}
+{% endhighlight %}

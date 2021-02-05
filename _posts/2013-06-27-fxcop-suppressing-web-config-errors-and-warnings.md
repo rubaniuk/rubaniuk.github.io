@@ -18,7 +18,7 @@ _d:\BuildTest\Any CPU\Release\DeploymentDrop\Web.config(27): warning : CA3114 : 
 
 The issue was solved by adding **GlobalSuppressions.cs** to MyProject where there issue was showing up (not where Web.config lives!):
 
-<pre class="brush: csharp; gutter: true">// This file is used by Code Analysis to maintain SuppressMessage 
+{% highlight csharp %}// This file is used by Code Analysis to maintain SuppressMessage 
 // attributes that are applied to this project.
 // Project-level suppressions either have no target or are given 
 // a specific target and scoped to a namespace, type, member, etc.
@@ -28,6 +28,6 @@ The issue was solved by adding **GlobalSuppressions.cs** to MyProject where ther
 // "In Suppression File".
 // You do not need to add suppressions to this file manually.
 
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security.Web.Configuration", "CA3114:SetCustomErrorsModeToOn")]</pre>
+[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Security.Web.Configuration", "CA3114:SetCustomErrorsModeToOn")]{% endhighlight %}
 
 Note that SuppressMessage above will suppress all CA3114 messages in the project.

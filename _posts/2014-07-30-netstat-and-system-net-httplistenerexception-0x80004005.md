@@ -18,11 +18,11 @@ The exception was coming out of System.Net.HttpListener (I write in C#) and the
 
 Maybe there is a bastard process from the previous run? I checked Process Explorer &#8211; nothing. I also have ISS up and running &#8211; which I decided to stop:
 
-<pre class="brush: bash; gutter: true">iisreset -stop</pre>
+{% highlight bash %}iisreset -stop{% endhighlight %}
 
 I couldn&#8217;t do that either, it would throw a an error. &#8220;That&#8217;s getting more interesting&#8221;, I thought. Well, most likely something is using ports that my web service is listening on. Which port would it be? I had only 80 and 8080 ports opened on my web service. But what is it?
 
-<pre class="brush: bash; gutter: true">C:&gt;netstat -ano | findstr :80 | findstr LISTENING
-  TCP    0.0.0.0:80      0.0.0.0:0  LISTENING       6112</pre>
+{% highlight bash %}C:>netstat -ano | findstr :80 | findstr LISTENING
+  TCP    0.0.0.0:80      0.0.0.0:0  LISTENING       6112{% endhighlight %}
 
 OK, so the PID of the server is 6112, let&#8217;s take a look what it is. Skype! Wow, that&#8217;s interesting &#8211; it was running in the background and I never had issues with it, but for whatever reason it started to listen on that port. I killed skype process and moved on to debugging my code.

@@ -19,15 +19,15 @@ The actual steps of configuring SSL on the server is very simple:
 
   1. From elevated command line execute following command to **delete all previous bindings** for port 443 (obviously, port can be different): 
   
-  <pre class="brush: bash; gutter: true">netsh http delete sslcert ipport=0.0.0.0:443</pre>
+  {% highlight bash %}netsh http delete sslcert ipport=0.0.0.0:443{% endhighlight %}
 
   2. From elevated command line establish binding between certificate and port: 
   
-  <pre class="brush: bash; gutter: true">netsh http add sslcert ipport=0.0.0.0:443 certhash=YourCertHash appid={YOUR-APP-ID} certstorename=MY</pre>
+  {% highlight bash %}netsh http add sslcert ipport=0.0.0.0:443 certhash=YourCertHash appid={YOUR-APP-ID} certstorename=MY{% endhighlight %}
 
 Successful response to the first command is &#8220;SSL Certificate successfully deleted&#8221;, for the second is &#8220;SSL Certificate successfully added&#8221;. You can also see your SSL bindings using following command:
 
-<pre class="brush: bash; gutter: true">netsh http show sslcert</pre>
+{% highlight bash %}netsh http show sslcert{% endhighlight %}
 
 At this point you should be good to go &#8211; make a call from the client to your server and SSL should be established.
 
