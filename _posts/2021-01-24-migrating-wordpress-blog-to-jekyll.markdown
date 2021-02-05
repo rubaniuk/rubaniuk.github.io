@@ -10,7 +10,7 @@ Why? WP is a great publishing platform, but I wanted something that requires min
 
 It wasn't as smooth as I anticipated. Even though all blog _posts, _drafts and wp-content were exported, I ran into issue where simply copying exported markdown files (.md) from _posts folder didn't work and I had to comment out id, guid and permalink (see below). After these changes posts showed mostly fine.
 
-<pre class="brush: bash; gutter: true">
+{% highlight md %}
 # id: 433
 title: Failed to connect to a Windows service
 date: 2016-06-04T11:39:27-07:00
@@ -19,7 +19,7 @@ layout: post
 # guid: http://www.rubaniuk.com/?p=433
 # permalink: /?p=433
 ...
-</pre>
+{% endhighlight %}
 
 I did write "mostly" because book reviews used WP book review plugin and I still need to do extra formatting in order to properly display these posts. 
 
