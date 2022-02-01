@@ -7,7 +7,7 @@ categories: jekyll ssl certificate letsencrypt
 
 I recently got a notice from my domain provider that my SSL certificate for www.rubaniuk.com will expire in 1 month and that I need to renew it. I opened this blog and noticed that the certificate has expired already, I decided to dig deeper and found out that GitHub Pages aren't receiving new cert from my Certificate Authority!
 
-This wasn't great user experience and that got me thinking: what if I swithced to free LetsEncrypt Certificate Authority? Let's do just that! 
+This wasn't great user experience and that got me thinking: what if I switched to free LetsEncrypt Certificate Authority? Let's do just that! 
 
 First, let's delete existing CNAME file with domain in it:
 
