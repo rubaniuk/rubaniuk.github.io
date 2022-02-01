@@ -5,7 +5,7 @@ date: 2022-01-31 22:49:00 -0000
 categories: jekyll apple m1
 ---
 
-After a 12 months long hiatus I started blogging again. Expired TLS certificate and the process of transitioning to LetsEncrypt were the inspiration and motivated me to share the knowledge with the world.
+After a 12 months-long hiatus I started blogging again. Expired TLS certificate and the process of transitioning to LetsEncrypt were the inspiration and motivated me to share the knowledge with the world.
 
 I also need to mention that I had to update Ruby on my Apple M1-powered MacBook as I was getting tons of errors when trying to re-build the blog. Note that I had the latest macOS Monterey which comes with pre-installed Ruby 2.7.0, but it wouldn't work for me. I needed to update the version that I previously installed via Homebrew. 
 
